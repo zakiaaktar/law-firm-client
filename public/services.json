@@ -1,0 +1,28 @@
+[
+    { 
+        "service_id": "01",
+        "title": "Criminal Lawyer",
+        "img": "https://i.ibb.co/9G1DbNH/Untitled-design.jpg",
+       
+        
+        "description": "The primary role of a criminal lawyer is to protect the rights of their clients and ensure that they receive a fair trial. This involves investigating the case, gathering evidence, preparing a defense strategy, and representing the client in court. Criminal lawyers may also negotiate plea deals with prosecutors to reduce charges or penalties"
+    },
+    { 
+        "service_id": "02",
+        "title": "Family Case",
+        "img": "https://i.ibb.co/frfTFX1/Untitled-design-2.jpg",
+        "price": "200.00",
+        "description": "In a family law case, a family lawyer works with their client to protect their interests and advocate for their rights. Family lawyers may also help clients negotiate settlements or represent them in court proceedings."
+    },
+    
+    { 
+        "service_id": "03", 
+        "title": "Legal Product",
+        "img": "https://i.ibb.co/5rdXfDk/Untitled-design-1.jpg",
+        "price": "100.00",
+        "description": "Legal products are essential to the functioning of the legal industry and play a vital role in supporting legal professionals in their work."
+    }
+    
+   
+]
+
