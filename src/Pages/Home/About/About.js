@@ -1,9 +1,15 @@
 import React from 'react';
 import about from '../../../assets/images/about.jpg'
 
+
+
 const About = () => {
     return (
-        <section className='my-12'
+       <div>
+        <div className='text-red-700 font-bold text-4xl text-center my-16'>
+            <h2>About Our Service</h2>
+        </div>
+         <section className='my-12'
             style={{
                 background: `url(${about})`
             }}
@@ -20,6 +26,7 @@ const About = () => {
             </div>
 
         </section>
+       </div>
     );
 };
 

@@ -8,6 +8,7 @@ const Navbar = () => {
         <li className='text-black font-semibold'><Link to='/'>Home</Link></li>
         <li className='text-black font-semibold'><Link to='/about'>About</Link></li>
         <li className='text-black font-semibold'><Link to='/services'>Services</Link></li>
+        <li className='text-black font-semibold'><Link to='/appointment'>Appointment</Link></li>
         <li className='text-black font-semibold'><Link to='/login'>Login</Link></li>
         {/* <li><Link to='/login'>Login</Link></li> */}
         {/* {
@@ -43,7 +44,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to='' className="btn bg-red-700 rounded-full  border-none">Get started</Link>
+                <Link to='' className="btn bg-red-700 rounded-full border-none">Get started</Link>
             </div>
         </div>
     );

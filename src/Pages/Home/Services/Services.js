@@ -15,7 +15,7 @@ const Services = () => {
     return (
         <div className='my-20'>
             <div className='text-center'>
-                <h2 className="text-4xl font-serif font-bold text-green-500 my-12"> Our Service Area</h2>
+                <h2 className="text-4xl font-serif font-bold text-red-700 my-12"> Our Service Area</h2>
                 {/* <div className='w-1/2 mx-auto my-8'>
                     <p>Health coaches are trained professionals who work with clients to develop personalized health plans and provide guidance and support as they work towards their health and wellness goals. </p>
                 </div> */}
