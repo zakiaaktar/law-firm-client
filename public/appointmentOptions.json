@@ -1,7 +1,7 @@
 [
     {
-       
-        "name": "Teeth Orthodontics",
+        "_id": 1,
+        "name": "Criminal Lawyer",
         "slots": [
             "08.00 AM - 08.30 AM",
             "08.30 AM - 09.00 AM",
@@ -22,8 +22,8 @@
         ]
     },
     {
-        
-        "name": "Cosmetic Dentistry",
+        "_id": 2,
+        "name": "Company Law",
         "slots": [
             "08.00 AM - 08.30 AM",
             "08.30 AM - 09.00 AM",
@@ -44,8 +44,8 @@
         ]
     },
     {
-        
-        "name": "Teeth Cleaning",
+        "_id": 3,
+        "name": "Legal Products",
         "slots": [
             "08.00 AM - 08.30 AM",
             "08.30 AM - 09.00 AM",
@@ -66,8 +66,8 @@
         ]
     },
     {
-       
-        "name": "Cavity Protection",
+        "_id": 4,
+        "name": "Family Case",
         "slots": [
             "08.00 AM - 08.30 AM",
             "08.30 AM - 09.00 AM",
@@ -88,8 +88,8 @@
         ]
     },
     {
-        
-        "name": "Pediatric Dental",
+        "_id": 5,
+        "name": "Copyright",
         "slots": [
             "08.00 AM - 08.30 AM",
             "08.30 AM - 09.00 AM",
@@ -110,8 +110,8 @@
         ]
     },
     {
-       
-        "name": "Oral Surgery",
+        "_id": 6,
+        "name": "Legal Products",
         "slots": [
             "08.00 AM - 08.30 AM",
             "08.30 AM - 09.00 AM",
