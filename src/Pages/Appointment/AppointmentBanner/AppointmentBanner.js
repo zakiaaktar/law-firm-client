@@ -1,5 +1,5 @@
-import { format } from 'date-fns';
-import React, { useState } from 'react';
+//import { format } from 'date-fns';
+import React from 'react';
 //import appointmentBanner from '../../../assets/images/appointmentBanner.jpeg';
 import { DayPicker } from 'react-day-picker';
 import about from '../../../assets/images/about.jpg'
