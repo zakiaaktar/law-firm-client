@@ -57,7 +57,7 @@ const BookingModal = ({ selectedDate, setTreatment, treatment }) => {
                         <input name="phone" type="text" placeholder="Contact number" className="input w-full input-bordered" />
 
                         <br />
-                        <input className='w-full max-w-xs btn btn-accent' type="submit" value="Submit" />
+                        <input className='w-full btn bg-red-700 border-none cursor-pointer text-white font-bold' type="submit" value="Submit" />
                     </form>
                 </div>
             </div>

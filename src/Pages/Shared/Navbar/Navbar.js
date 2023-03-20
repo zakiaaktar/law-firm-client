@@ -5,11 +5,11 @@ const Navbar = () => {
 
 
     const menuItems = <>
-        <li className='text-black font-semibold'><Link to='/'>Home</Link></li>
-        <li className='text-black font-semibold'><Link to='/about'>About</Link></li>
-        <li className='text-black font-semibold'><Link to='/services'>Services</Link></li>
-        <li className='text-black font-semibold'><Link to='/appointment'>Appointment</Link></li>
-        <li className='text-black font-semibold'><Link to='/login'>Login</Link></li>
+        <li className='text-black font-semibold hover:text-red-700'><Link to='/'>Home</Link></li>
+        <li className='text-black font-semibold hover:text-red-700'><Link to='/about'>About</Link></li>
+        <li className='text-black font-semibold hover:text-red-700'><Link to='/services'>Services</Link></li>
+        <li className='text-black font-semibold hover:text-red-700'><Link to='/appointment'>Appointment</Link></li>
+        <li className='text-black font-semibold hover:text-red-700'><Link to='/login'>Login</Link></li>
         {/* <li><Link to='/login'>Login</Link></li> */}
         {/* {
             user?.email ?
