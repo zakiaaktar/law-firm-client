@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider';
 
 
 
@@ -8,10 +9,33 @@ import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const { createUser } = useContext(AuthContext);
+
+
+
 
 
     const handleSignUp = (data) => {
         //console.log(data);
+        // setSignUpError('');
+        createUser(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                // toast('user created successfully')
+                // const userInfo = {
+                //     displayName: data.name
+                // }
+                // updateUser(userInfo)
+                //     .then(() => {
+                //         saveUser(data.name, data.email);
+                //     })
+                //     .catch(err => console.log(err));
+            })
+            .catch(error => {
+                console.log(error)
+                // setSignUpError(error.message);
+            });
     }
 
 

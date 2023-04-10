@@ -14,7 +14,7 @@ const AppointmentBanner = ({selectedDate, setSelectedDate}) => {
     return (
 
         <header>
-            <div className='text-red-700 font-bold text-4xl text-center my-16'>
+            <div className='text-red-700 font-bold text-4xl text-center '>
                 <h2>Appointment</h2>
             </div>
             <section className='my-12 py-16'
