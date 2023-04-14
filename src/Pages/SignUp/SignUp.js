@@ -1,6 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 
 
@@ -9,7 +10,10 @@ import { AuthContext } from '../../contexts/AuthProvider';
 
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const { createUser } = useContext(AuthContext);
+    const { createUser, updateUser } = useContext(AuthContext);
+    const [signUpError, setSignUpError] = useState('');
+
+    const navigate = useNavigate();
 
 
 
@@ -17,24 +21,25 @@ const SignUp = () => {
 
     const handleSignUp = (data) => {
         //console.log(data);
-        // setSignUpError('');
+        setSignUpError('');
         createUser(data.email, data.password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                // toast('user created successfully')
-                // const userInfo = {
-                //     displayName: data.name
-                // }
-                // updateUser(userInfo)
-                //     .then(() => {
-                //         saveUser(data.name, data.email);
-                //     })
-                //     .catch(err => console.log(err));
+                toast('user created successfully')
+                const userInfo = {
+                    displayName: data.name
+                }
+                updateUser(userInfo)
+                    .then(() => {
+                        navigate('/');
+                        // saveUser(data.name, data.email);
+                    })
+                    .catch(err => console.log(err));
             })
             .catch(error => {
                 console.log(error)
-                // setSignUpError(error.message);
+                setSignUpError(error.message);
             });
     }
 
@@ -76,7 +81,7 @@ const SignUp = () => {
 
 
                     <input className='btn px-6 py-3 border-none bg-red-700 w-full mt-6 font-bold cursor-pointer' value="Sign Up" type="submit" />
-                    {/* {signUpError && <p className='text-red-600'>{signUpError}</p>} */}
+                    {signUpError && <p className='text-red-600'>{signUpError}</p>}
                 </form>
                 <p className='mt-2'>Already have an account <Link to='/login' className='text-red-700 font-bold'>Please Login</Link></p>
                 <div className="divider">OR</div>

@@ -1,12 +1,20 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { signIn } = useContext(AuthContext);
     const [loginError, setLoginError] = useState('');
+
+
+    const location = useLocation();
+    const navigate = useNavigate();
+
+
+    const from = location.state?.from?.pathname || '/';
 
 
 
@@ -22,7 +30,7 @@ const Login = () => {
                 const user = result.user;
                 console.log(user)
                 // setLoginUserEmail(data.email);
-                //navigate(from, {replace: true});
+                navigate(from, {replace: true});
 
             })
             .catch(error => {
@@ -69,7 +77,8 @@ const Login = () => {
                 </form>
                 <p className='mt-2'>New to Law Firm <Link to='/signup' className='text-red-700 font-bold'>Create new account</Link></p>
                 <div className="divider">OR</div>
-                <button className='btn btn-outline w-full text-red-700'>CONTINUE WITH GOOGLE</button>
+                {/* <button className='btn btn-outline w-full text-red-700'>CONTINUE WITH GOOGLE</button> */}
+                <SocialLogin></SocialLogin>
             </div>
         </div>
     );
