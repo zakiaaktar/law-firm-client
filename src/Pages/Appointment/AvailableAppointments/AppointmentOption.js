@@ -8,7 +8,7 @@ const AppointmentOption = ({ appointmentOption, setTreatment }) => {
 
 
     return (
-        <div className="card shadow-xl w-96 mx-auto py-12 rounded-none hover:bg-gray-100">
+        <div className="card shadow-xl w-96 mx-auto py-12 rounded-none">
             <div className="card-body text-center">
                 <h2 className="text-2xl text-red-700 text-center font-bold">{name}</h2>
                 <p>{slots.length > 0 ? slots[0] : 'Try Another day'}</p>

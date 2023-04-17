@@ -33,7 +33,7 @@ const BookingModal = ({ selectedDate, setTreatment, treatment, refetch }) => {
         // console.log(booking);
         // setTreatment(null);
 
-        fetch('http://localhost:2000/bookings', {
+        fetch('http://localhost:8000/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
