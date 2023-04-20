@@ -4,6 +4,7 @@ import Main from "../../Layout/Main";
 import Appointment from "../../Pages/Appointment/Appointment/Appointment";
 import AddLawyer from "../../Pages/Dashboard/AddLawyer/AddLawyer";
 import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers";
+import ManageLawyers from "../../Pages/Dashboard/ManageLawyers/ManageLawyers";
 import MyAppointment from "../../Pages/Dashboard/MyAppointment/MyAppointment";
 import About from "../../Pages/Home/About/About";
 import Home from "../../Pages/Home/Home/Home";
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/addlawyer',
                 element: <AdminRoute><AddLawyer></AddLawyer></AdminRoute>
+            },
+            {
+                path: '/dashboard/managelawyers',
+                element: <AdminRoute><ManageLawyers></ManageLawyers></AdminRoute>
             },
         ]
     },
