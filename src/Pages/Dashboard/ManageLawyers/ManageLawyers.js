@@ -17,7 +17,7 @@ const ManageLawyers = () => {
         queryKey: ['lawyers'],
         queryFn: async () => {
             try {
-                const res = await fetch('http://localhost:8000/lawyers', {
+                const res = await fetch('https://law-firm-server-three.vercel.app/lawyers', {
                     headers: {
                         authorization: `bearer ${localStorage.getItem('accessToken')}`
                     }
@@ -35,7 +35,7 @@ const ManageLawyers = () => {
 
     const handleDeleteLawyer = lawyer => {
         console.log(lawyer);
-        fetch(`http://localhost:8000/lawyers/${lawyer._id}`, {
+        fetch(`https://law-firm-server-three.vercel.app/lawyers/${lawyer._id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`

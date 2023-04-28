@@ -33,7 +33,7 @@ const BookingModal = ({ selectedDate, setTreatment, treatment, refetch }) => {
         // console.log(booking);
         // setTreatment(null);
 
-        fetch('http://localhost:8000/bookings', {
+        fetch('https://law-firm-server-three.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

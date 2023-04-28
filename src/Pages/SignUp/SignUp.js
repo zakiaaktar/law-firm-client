@@ -54,7 +54,7 @@ const SignUp = () => {
 
     const saveUser = (name, email) => {
         const user = { name, email };
-        fetch('http://localhost:8000/users', {
+        fetch('https://law-firm-server-three.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -72,7 +72,7 @@ const SignUp = () => {
 
 
     // const getUserToken = email => {
-    //     fetch(`http://localhost:8000/jwt?email=${email}`)
+    //     fetch(`https://law-firm-server-three.vercel.app/jwt?email=${email}`)
     //         .then(res => res.json())
     //         .then(data => {
     //             if (data.accessToken) {

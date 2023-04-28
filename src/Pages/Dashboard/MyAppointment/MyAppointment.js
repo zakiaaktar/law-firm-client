@@ -11,7 +11,7 @@ const MyAppointment = () => {
 
 
 
-    const url = `http://localhost:8000/bookings?email=${user?.email}`;
+    const url = `https://law-firm-server-three.vercel.app/bookings?email=${user?.email}`;
 
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookings', user?.email],

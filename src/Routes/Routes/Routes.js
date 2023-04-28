@@ -55,9 +55,9 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
         errorElement: <DisplayError></DisplayError>,
-        children:[
+        children: [
             {
-                path: '/dashboard', 
+                path: '/dashboard',
                 element: <MyAppointment></MyAppointment>
             },
             {
@@ -75,7 +75,7 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/payment/:id',
                 element: <Payment></Payment>,
-                loader: ({params}) => fetch(`http://localhost:8000/bookings/${params.id}`)
+                loader: ({ params }) => fetch(`https://law-firm-server-three.vercel.app/bookings/${params.id}`)
             }
         ]
     },

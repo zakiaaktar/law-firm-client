@@ -6,15 +6,15 @@ const useToken = email => {
 
 
     useEffect(() => {
-        if(email){
-            fetch(`http://localhost:8000/jwt?email=${email}`)
-            .then(res => res.json())
-            .then(data => {
-                if (data.accessToken) {
-                    localStorage.setItem('accessToken', data.accessToken);
-                    setToken(data.accessToken);
-                }
-            });
+        if (email) {
+            fetch(`https://law-firm-server-three.vercel.app/jwt?email=${email}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.accessToken) {
+                        localStorage.setItem('accessToken', data.accessToken);
+                        setToken(data.accessToken);
+                    }
+                });
         }
     }, [email]);
     return [token];

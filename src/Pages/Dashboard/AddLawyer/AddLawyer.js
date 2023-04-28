@@ -19,7 +19,7 @@ const AddLawyer = () => {
     const { data: specialties, isLoading } = useQuery({
         queryKey: ['specialty'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:8000/appointmentSpecialty');
+            const res = await fetch('https://law-firm-server-three.vercel.app/appointmentSpecialty');
             const data = await res.json();
             return data;
         }
@@ -53,7 +53,7 @@ const AddLawyer = () => {
 
 
                     // save lawyer information to the database
-                    fetch('http://localhost:8000/lawyers', {
+                    fetch('https://law-firm-server-three.vercel.app/lawyers', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
